@@ -10,7 +10,7 @@ public class Base {
 
     @BeforeMethod
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://google.com");
         driver.manage().window().maximize();
